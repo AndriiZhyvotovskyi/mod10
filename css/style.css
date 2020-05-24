@@ -70,10 +70,12 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
 
 html {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -93,27 +95,6 @@ body {
     font-size: 16px;
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .link {
     text-decoration: none;
 }
@@ -125,6 +106,8 @@ input[type="radio"].visually-hidden {
 }
 
 .page-header {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9))), url(/img/background.jpg);
+    background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url(/img/background.jpg);
     background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url(/img/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -138,8 +121,14 @@ input[type="radio"].visually-hidden {
 .header-nav,
 .wrapper-navigation,
 .header-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -151,6 +140,8 @@ input[type="radio"].visually-hidden {
     color: var(--color-first);
     font-size: 1.875rem;
     font-weight: 700;
+    -webkit-transition: color .5s linear;
+    -o-transition: color .5s linear;
     transition: color .5s linear;
 }
 
@@ -171,6 +162,8 @@ input[type="radio"].visually-hidden {
 
 .header-navigation__link {
     position: relative;
+    -webkit-transition: color .5s linear;
+    -o-transition: color .5s linear;
     transition: color .5s linear;
 }
 
@@ -187,7 +180,11 @@ input[type="radio"].visually-hidden {
     background-color: var(--color-six);
     bottom: -10px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+    -webkit-transition: width .3s linear;
+    -o-transition: width .3s linear;
     transition: width .3s linear;
 }
 
@@ -213,6 +210,8 @@ input[type="radio"].visually-hidden {
     fill: var(--color-first);
     width: 20px;
     height: 20px;
+    -webkit-transition: fill .3s linear;
+    -o-transition: fill .3s linear;
     transition: fill .3s linear;
 }
 
@@ -247,13 +246,21 @@ input[type="radio"].visually-hidden {
 }
 
 .header__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-weight: 700;
     border: 4px solid var(--color-first);
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
     transition: all .3s linear;
 }
 
@@ -261,9 +268,6 @@ input[type="radio"].visually-hidden {
     background-color: rgb(255, 255, 255);
     color: var(--color-fourth);
 }
-
-
-/* -----------------------services ------------------------*/
 
 .services {
     padding-top: 42px;
@@ -298,13 +302,20 @@ input[type="radio"].visually-hidden {
 }
 
 .section-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .services__item {
     width: 383px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 96px;
 }
@@ -332,9 +343,6 @@ input[type="radio"].visually-hidden {
     color: var(--color-third);
 }
 
-
-/* ---------------------------team --------------------*/
-
 .section-description {
     font-family: var(--font-second);
     font-size: .9375rem;
@@ -354,7 +362,11 @@ input[type="radio"].visually-hidden {
 }
 
 .team__member-overlov {
+    -webkit-transition: -webkit-transform .3s linear;
+    transition: -webkit-transform .3s linear;
+    -o-transition: transform .3s linear;
     transition: transform .3s linear;
+    transition: transform .3s linear, -webkit-transform .3s linear;
 }
 
 .team__member-image {
@@ -362,6 +374,8 @@ input[type="radio"].visually-hidden {
 }
 
 .team__item:hover .team__member-overlov {
+    -webkit-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
     transform: translate(-10px, -10px);
 }
 
@@ -376,8 +390,12 @@ input[type="radio"].visually-hidden {
     height: 100%;
     top: 0;
     left: 0;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
+    background: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
     background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
     opacity: 0;
+    -webkit-transition: opacity .3s linear;
+    -o-transition: opacity .3s linear;
     transition: opacity .3s linear;
 }
 
@@ -385,7 +403,11 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -399,6 +421,8 @@ input[type="radio"].visually-hidden {
     height: 54px;
     padding: 14px;
     background-color: var(--color-six);
+    -webkit-transition: background-color .3s linear;
+    -o-transition: background-color .3s linear;
     transition: background-color .3s linear;
 }
 
@@ -414,6 +438,8 @@ input[type="radio"].visually-hidden {
 
 .socials__link:hover .socials__icon {
     fill: var(--color-first);
+    -webkit-transition: fill .3s linear;
+    -o-transition: fill .3s linear;
     transition: fill .3s linear;
 }
 
@@ -443,13 +469,57 @@ input[type="radio"].visually-hidden {
 .footer__wrapper {
     padding-top: 10px;
     padding-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .footer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+}
+
+input::-webkit-input-placeholder {
+    text-transform: capitalize;
+    color: rgb(204, 204, 204);
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    width: 150px;
+}
+
+input::-moz-placeholder {
+    text-transform: capitalize;
+    color: rgb(204, 204, 204);
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    width: 150px;
+}
+
+input:-ms-input-placeholder {
+    text-transform: capitalize;
+    color: rgb(204, 204, 204);
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    width: 150px;
+}
+
+input::-ms-input-placeholder {
+    text-transform: capitalize;
+    color: rgb(204, 204, 204);
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    width: 150px;
 }
 
 input::placeholder {
@@ -464,7 +534,6 @@ input::placeholder {
 input {
     width: 230px;
     height: 40px;
-    /* outline: none; */
     border: 1px solid rgb(231, 231, 231);
     padding-left: 10px;
 }
@@ -475,6 +544,8 @@ input {
     color: var(--color-first);
     font-weight: 700;
     text-transform: uppercase;
+    -webkit-transition: background-color .5s linear;
+    -o-transition: background-color .5s linear;
     transition: background-color .5s linear;
 }
 
@@ -494,9 +565,13 @@ input[type='email']:invalid {
     outline-color: red;
 }
 
-@media (min-resolution: 192dpi),
+@media (-webkit-min-device-pixel-ratio: 2),
+(-o-min-device-pixel-ratio: 2/1),
+(min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .header {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9))), url(/img/background@2x.jpg);
+        background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url(/img/background@2x.jpg);
         background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url(/img/background@2x.jpg);
     }
 }
