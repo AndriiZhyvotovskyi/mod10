@@ -1,0 +1,56 @@
+link
+
+page-header
+
+container
+
+header-nav
+
+header-logotype
+
+wrapper-navigation
+
+header-navigation
+  header-navigation__list
+  header-navigation__link
+
+header-form
+  header-form__button
+  header-form__icon
+
+header-title
+
+header__button
+
+section
+  section-title
+  section-description
+
+services
+  services__list
+  services__item
+  services__image
+    services__image-icon
+  services__title
+  services__description
+
+team
+  team__list
+  team__item
+  team__member
+    team__member-overlov
+    team__member-image
+    team__member-wrapper
+  team__title
+  team__direction
+
+socials
+  socials__item
+  socials__link
+  socials__icon
+
+footer
+  footer__wrapper
+  footer__adress
+  footer__link
+  footer__button
