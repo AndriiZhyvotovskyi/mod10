@@ -5,15 +5,18 @@ button
 container
 
 page-header
-  page-header__nav
-    page-header__nav--logotype
-    page-header__nav--item
+  page-header__nav / navigetion
+    page-header__nav--logotype / logotype
+    page-header__nav--item / menu
   page-header__title
   page-header__button
 
-header-navigation
-  header-navigation__list
-  header-navigation__link
+header-navigation         / menu
+  header-navigation__list / menu__list
+  header-navigation__link / menu__link
+                          / menu__button
+                          / menu__button-item
+                          / menu__button-icon
 
 header-form
   header-form__button

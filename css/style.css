@@ -118,9 +118,8 @@ body {
     text-align: center;
 }
 
-.page-header__nav,
-.page-header__nav--item,
-.header-navigation {
+.navigation,
+.menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -132,11 +131,11 @@ body {
     align-items: center;
 }
 
-.page-header__nav {
+.navigation {
     margin-bottom: 140px;
 }
 
-.page-header__nav--logotype {
+.logotype {
     color: var(--color-first);
     font-size: 1.875rem;
     font-weight: 700;
@@ -145,33 +144,33 @@ body {
     transition: color .5s linear;
 }
 
-.page-header__nav--logotype:hover {
+.logotype:hover {
     color: var(--color-six);
 }
 
-.header-navigation__list+.header-navigation__list {
+.menu__list+.menu__list {
     margin-left: 26px;
 }
 
-.header-navigation__link,
+.menu__link,
 .page-header__button {
     color: var(--color-first);
     font-size: 0.875rem;
     text-transform: uppercase;
 }
 
-.header-navigation__link {
+.menu__link {
     position: relative;
     -webkit-transition: color .5s linear;
     -o-transition: color .5s linear;
     transition: color .5s linear;
 }
 
-.header-navigation__link:hover {
+.menu__link:hover {
     color: var(--color-six);
 }
 
-.header-navigation__link::after {
+.menu__link::after {
     content: '';
     position: absolute;
     display: block;
@@ -188,7 +187,7 @@ body {
     transition: width .3s linear;
 }
 
-.header-navigation__link:hover::after {
+.menu__link:hover::after {
     width: 100%;
 }
 
@@ -196,17 +195,17 @@ body {
     margin-left: 52px;
 }
 
-.header-form__button {
+.menu__button {
     background: none;
     border: none;
     cursor: pointer;
 }
 
-.header-form__button+.header-form__button {
+.menu__button+.menu__button {
     margin-left: 42px;
 }
 
-.header-form__icon {
+.menu__button-icon {
     fill: var(--color-first);
     width: 20px;
     height: 20px;
@@ -215,7 +214,7 @@ body {
     transition: fill .3s linear;
 }
 
-.header-form__icon:hover {
+.menu__button-icon:hover {
     fill: var(--color-six);
 }
 
@@ -236,6 +235,7 @@ body {
     font-size: 4.5rem;
     text-transform: capitalize;
     margin-bottom: 40px;
+    font-weight: 400;
 }
 
 .button {
@@ -297,8 +297,9 @@ body {
     font-size: 1.5rem;
     font-family: var(--font-thirrd);
     display: block;
-    text-transform: capitalize;
+    text-transform: none;
     margin-bottom: 10px;
+    font-weight: 400;
 }
 
 .section-list {
@@ -373,13 +374,13 @@ body {
     margin-bottom: 30px;
 }
 
-.team__item:hover .team__member-overlov {
+.team__member:hover .team__member-overlov {
     -webkit-transform: translate(-10px, -10px);
     -ms-transform: translate(-10px, -10px);
     transform: translate(-10px, -10px);
 }
 
-.team__item:hover .team__member-wrapper {
+.team__member:hover .team__member-wrapper {
     opacity: 1;
 }
 
