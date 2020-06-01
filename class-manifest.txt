@@ -8,7 +8,7 @@ navigetion
 
 logotype
 
-page-header    
+page-header
   page-header__title
   page-header__button
 
@@ -18,10 +18,6 @@ menu
   menu__button
     menu__button-item
     menu__button-icon
-
-header-form
-  header-form__button
-  header-form__icon
 
 section
   section-title
