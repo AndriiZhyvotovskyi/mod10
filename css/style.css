@@ -201,8 +201,8 @@ body {
     cursor: pointer;
 }
 
-.menu__button+.menu__button {
-    margin-left: 42px;
+.menu__button--indent {
+    margin-left: 52px;
 }
 
 .menu__button-icon {
@@ -302,7 +302,7 @@ body {
     font-weight: 400;
 }
 
-.section-list {
+.list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -313,32 +313,36 @@ body {
     flex-wrap: wrap;
 }
 
-.services__item {
+.services-list__item {
     width: 383px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+}
+
+.section-list:nth-child(3) {
+    border: 1 px solid red;
     margin-bottom: 96px;
 }
 
-.services__image {
+.services-list__image {
     padding: 0 20px;
 }
 
-.services__image-icon {
+.services-list__image-icon {
     fill: var(--color-five);
     width: 32px;
     height: 32px;
 }
 
-.services__title {
+.services-list__title {
     font-size: .875rem;
     color: var(--color-second);
     text-transform: uppercase;
     margin-bottom: 16px;
 }
 
-.services__description {
+.services-list__description {
     font-family: var(--font-second);
     font-size: .9375rem;
     color: var(--color-third);
@@ -357,12 +361,12 @@ body {
     text-align: center;
 }
 
-.team__member {
+.team-list__member {
     background-color: aqua;
     position: relative;
 }
 
-.team__member-overlov {
+.team-list__member-wrapper {
     -webkit-transition: -webkit-transform .3s linear;
     transition: -webkit-transform .3s linear;
     -o-transition: transform .3s linear;
@@ -370,21 +374,21 @@ body {
     transition: transform .3s linear, -webkit-transform .3s linear;
 }
 
-.team__member-image {
+.team-list__member-image {
     margin-bottom: 30px;
 }
 
-.team__member:hover .team__member-overlov {
+.team-list__member:hover .team-list__member-wrapper {
     -webkit-transform: translate(-10px, -10px);
     -ms-transform: translate(-10px, -10px);
     transform: translate(-10px, -10px);
 }
 
-.team__member:hover .team__member-wrapper {
+.team-list__member:hover .team-list__member-overlay {
     opacity: 1;
 }
 
-.team__member-wrapper {
+.team-list__member-overlay {
     position: absolute;
     display: block;
     width: 100%;
@@ -444,14 +448,14 @@ body {
     transition: fill .3s linear;
 }
 
-.team__title {
+.team-list__title {
     text-transform: uppercase;
     font-size: .875rem;
     margin-bottom: 14px;
     color: var(--color-second);
 }
 
-.team__direction {
+.team-list__direction {
     color: var(--color-third);
     font-size: 0.9375rem;
     font-family: var(--font-second);

@@ -1,5 +1,7 @@
 link
 
+list
+
 button 
 
 container
@@ -24,22 +26,23 @@ section
   section-description
 
 services
-  services__list
-  services__item
-  services__image
-    services__image-icon
-  services__title
-  services__description
+  services-list
+    services-list__item
+    services-list__image
+      services-list__image-icon
+    services-list__text
+    services-list__title
+    services-list__description
 
 team
-  team__list
-  team__item
-  team__member
-    team__member-overlov
-    team__member-image
-    team__member-wrapper
-  team__title
-  team__direction
+  team-list
+    team-list__item
+    team-list__member
+      team-list__member-wrapper
+      team-list__member-image
+      team-list__member-overlay
+    team-list__title
+    team-list__direction
 
 socials
   socials__item
