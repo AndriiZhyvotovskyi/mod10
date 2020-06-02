@@ -106,8 +106,8 @@ body {
 }
 
 .page-header {
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9))), url(../img/background.jpg);
     background: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url(../img/background.jpg);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9))), url(../img/background.jpg);
     background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url(../img/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -395,8 +395,8 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
     background: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
     background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
     opacity: 0;
     -webkit-transition: opacity .3s linear;
@@ -575,8 +575,8 @@ input[type='email']:invalid {
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .page-header {
-        background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9))), url(../img/background@2x.jpg);
         background: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url(../img/background@2x.jpg);
+        background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9))), url(../img/background@2x.jpg);
         background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url(../img/background@2x.jpg);
     }
 }
